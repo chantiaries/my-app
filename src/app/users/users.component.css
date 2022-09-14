@@ -1,0 +1,9 @@
+ #box{
+    height: 550px;
+    border: 2px solid burlywood;
+    background-color: antiquewhite;
+    margin: 20px;
+    font-size: 13px;
+ }
+
+

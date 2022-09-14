@@ -1,0 +1,24 @@
+
+<h3><label appHighlight> select car:</label></h3>
+
+<label>Honda</label>
+<input type="radio" name="car" value="Honda" [(ngModel)]="car">
+<label>BMW</label>
+<input type="radio" name="car" value="BMW" [(ngModel)]="car">
+<label>Audi</label>
+<input type="radio" name="car" value="Audi" [(ngModel)]="car">
+<br>
+<br>
+<div>
+    <img *ngIf="car=='BMW'" src="/assets/BMW.jpg">
+</div>
+<br>
+<div>
+    <img *ngIf="car=='Audi'" src="/assets/audi.jpg">
+</div>
+<br>
+<div>
+    <img *ngIf="car=='Honda'" src="assets/hondacity.webp">
+</div>
+
+<marquee>{{ message }}</marquee>
