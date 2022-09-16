@@ -39,14 +39,22 @@ export class VehicleService {
     );
   }
 
-  createvehicle( vehicle: Vehicle ): Observable<Vehicle> {
+  createvehicle(vehicle: Vehicle): Observable<Vehicle> {
     return this._HttpClient.post<Vehicle>(
-      'https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction', vehicle 
+      'https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction',
+      vehicle
     );
   }
 
   deleteVehicle(id: string): Observable<Vehicle> {
     return this._HttpClient.delete<Vehicle>(
+      'https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction' +
+        '/' +
+        id
+    );
+  }
+  getVehicle(id: string): Observable<Vehicle> {
+    return this._HttpClient.get<Vehicle>(
       'https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction' +
         '/' +
         id

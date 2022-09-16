@@ -34,6 +34,13 @@ import { MailComponent } from './mail/mail.component';
 import { UsersComponent } from './users/users.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { CreateuserComponent } from './createuser/createuser.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { StarComponent } from './star/star.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+import { NavComponent } from './nav/nav.component';
+import { ProductComponent } from './product/product.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +73,14 @@ import { CreateuserComponent } from './createuser/createuser.component';
     MailComponent,
     UsersComponent,
     CreatevehicleComponent,
-    CreateuserComponent
+    CreateuserComponent,
+    ParentComponent,
+    ChildComponent,
+    StarComponent,
+    CartlistComponent,
+    NavComponent,
+    ProductComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     BrowserModule,
